@@ -1,0 +1,63 @@
+print("====================================")
+print("   SISTEM PENGELOLAAN STOK BARANG")
+print("====================================")
+
+# 1. Input Data
+nama_barang = input("Masukkan nama barang: ")
+
+stok = int(input("Masukkan jumlah stok awal: "))
+
+print("\nData barang berhasil disimpan!")
+print("Nama Barang :", nama_barang)
+print("Stok Awal   :", stok)
+
+# 2. Perulangan Transaksi
+while True:
+    print("\n====================================")
+    print("          MENU TRANSAKSI")
+    print("====================================")
+    print("1. Barang Masuk")
+    print("2. Barang Keluar")
+    print("3. Cek Stok")
+    print("4. Keluar")
+
+    pilihan = input("Pilih transaksi (1-4): ")
+
+    # 3. Proses Transaksi
+    if pilihan == "1":
+        jumlah = int(input("Masukkan jumlah barang masuk: "))
+
+        if jumlah > 0:
+            stok += jumlah
+            print("Barang berhasil ditambahkan!")
+        else:
+            print("Jumlah harus lebih dari 0!")
+
+    elif pilihan == "2":
+        jumlah = int(input("Masukkan jumlah barang keluar: "))
+
+        if jumlah <= 0:
+            print("Jumlah harus lebih dari 0!")
+        elif jumlah > stok:
+            print("Stok Tidak Mencukupi!")
+        else:
+            stok -= jumlah
+            print("Barang berhasil dikeluarkan!")
+
+    # 4. Cek Stok
+    elif pilihan == "3":
+        print("\nNama Barang :", nama_barang)
+        print("Jumlah Stok :", stok)
+
+    # 5. Keluar dari Program
+    elif pilihan == "4":
+        print("\n====================================")
+        print("       TRANSAKSI SELESAI")
+        print("====================================")
+        print("Nama Barang :", nama_barang)
+        print("Sisa Stok   :", stok)
+        print("Terima kasih telah menggunakan program!")
+        break
+
+    else:
+        print("Pilihan tidak valid! Silakan coba lagi.")
