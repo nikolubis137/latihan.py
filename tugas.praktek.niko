@@ -61,3 +61,45 @@ while True:
 
     else:
         print("Pilihan tidak valid! Silakan coba lagi.")
+
+
+
+PS C:\Users\User\tugas praktek niko> & 'c:\Users\User\AppData\Local\Microsoft\WindowsApps\python3.13.exe' '"c:/Users/User/tugas praktek niko/up_nikolubis.py"'
+====================================
+   SISTEM PENGELOLAAN STOK BARANG
+====================================
+Masukkan nama barang: minyak
+Masukkan jumlah stok awal: 10
+
+Data barang berhasil disimpan!
+Nama Barang : minyak
+Stok Awal   : 10
+
+====================================
+          MENU TRANSAKSI
+====================================
+1. Barang Masuk
+2. Barang Keluar
+3. Cek Stok
+4. Keluar
+Pilih transaksi (1-4): 3
+
+Nama Barang : minyak
+Jumlah Stok : 10
+
+====================================
+          MENU TRANSAKSI
+====================================
+1. Barang Masuk
+2. Barang Keluar
+3. Cek Stok
+4. Keluar
+Pilih transaksi (1-4): 4
+
+====================================
+       TRANSAKSI SELESAI
+====================================
+Nama Barang : minyak
+Sisa Stok   : 10
+Terima kasih telah menggunakan program!
+PS C:\Users\User\tugas praktek niko>
